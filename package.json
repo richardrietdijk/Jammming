@@ -12,10 +12,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "parcel src/index.html",
+    "format": "prettier \"src/**/*.{js,html,css}\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +34,28 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel": "^2.0.0-nightly.769",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
